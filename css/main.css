@@ -24,6 +24,10 @@ html {
   max-width: 128px;
 }
 
+input {
+  max-width: 18em;
+}
+
 /* ----- =Colors ----- */
 
 .text-lg,
@@ -115,8 +119,14 @@ html {
 /* ----- =Opacity ----- */
 
 .opacity-1-2,
-.opacity-1-2-hov:hover {
+.opacity-1-2-hov:hover,
+.opacity-1-2-act:active {
   opacity: .5;
+}
+
+.opacity-3-4,
+.opacity-3-4-hov:hover {
+  opacity: .75;
 }
 
 .opacity-0,
