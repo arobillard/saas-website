@@ -24,14 +24,6 @@ html {
   max-width: 128px;
 }
 
-.price-card {
-
-}
-
-.price-card ul {
-  padding-left:
-}
-
 /* ----- =Colors ----- */
 
 .text-lg,
@@ -59,6 +51,11 @@ html {
   color: #393;
 }
 
+.text-green-light,
+.text-green-light-hov:hover {
+  color: #66b366;
+}
+
 .text-blue,
 .text-blue-hov:hover {
   color: #339;
@@ -67,10 +64,6 @@ html {
 .text-white,
 .text-white-hov:hover {
   color: #fff;
-}
-
-.color-transition {
-  transition: color 10s;
 }
 
 .bg-red,
@@ -109,7 +102,7 @@ html {
 }
 
 .transition {
-  transition: all .25s ease-out;
+  transition: background-color .25s ease-out, color .25s ease-out, border-color .25s ease-out;
 }
 
 
