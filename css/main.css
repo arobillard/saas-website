@@ -16,7 +16,7 @@ html {
 }
 
 .logo-examples {
-  max-width: 64px;
+  max-width: 96px;
   width: 100%;
 }
 
@@ -26,6 +26,31 @@ html {
 
 input {
   max-width: 18em;
+}
+
+.tour .media-img {
+  margin: 0 1rem 0 0;
+}
+
+.tour .img {
+  width: 20%;
+  margin: 0 1rem 0 0;
+}
+
+.embed-bannersteps {
+  padding-top: 23.6486%;
+}
+
+.embed-smallsteps {
+  padding-top: 187.5%;
+}
+
+.embed-team {
+  padding-top: 66.6178%;
+}
+
+main {
+  min-height: calc(100vh - 365px);
 }
 
 /* ----- =Colors ----- */
@@ -144,6 +169,14 @@ input {
   border: 2px solid #000;
 }
 
+.b-4px {
+  border: 4px solid #000;
+}
+
+.b-t-2px {
+  border-top: 2px solid #000;
+}
+
 .b-t-4px {
   border-top: 4px solid #000;
 }
@@ -154,6 +187,10 @@ input {
 
 .b-t-8px {
   border-top: 8px solid #000;
+}
+
+.b-b-2px {
+  border-bottom: 2px solid #000;
 }
 
 .b-b-4px {
@@ -203,6 +240,10 @@ input {
 
 .border-r-5-t {
   border-radius: 5px 5px 0 0;
+}
+
+.border-r-3-t {
+  border-radius: 3px 3px 0 0;
 }
 
 /* ----- =Shadows ----- */
