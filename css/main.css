@@ -6,9 +6,66 @@ html {
   font-family: Dosis, sans-serif;
 }
 
+.masthead {
+  z-index: 1000000;
+  position: fixed;
+  width: 100%;
+}
+
 .header-logo {
   max-height: 50px;
   margin: 1.3rem 0;
+}
+
+.i-p-logo {
+  background-image: url("../images/polished-p-green.svg");
+}
+
+.p-logo {
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.nav-label {
+  float: right;
+  height: 2rem;
+}
+
+.nav-label i:first-child img {
+  transition: transform 1s, opacity 1s;
+}
+
+.nav-label i:last-child img {
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+input[type="checkbox"] + label::before {
+  position: absolute;
+  left: -1000px;
+}
+
+.nav-slide {
+  position: fixed;
+  bottom: 0;
+}
+
+.nav-check:checked ~ .nav-label i:last-child img {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.nav-check:checked ~ .nav-label i:first-child img {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
+.nav-check:checked ~ .nav-slide {
+  display: none;
+}
+
+main {
+
 }
 
 .banner-body {
@@ -53,80 +110,123 @@ main {
   min-height: calc(100vh - 365px);
 }
 
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 0px;
+  outline-offset: 0;
+  box-shadow: 1px 1px 3px #393;
+}
+
 /* ----- =Colors ----- */
 
 .text-lg,
-.text-lg-hov:hover {
+.text-lg-hov:hover,
+.text-lg-hov:active,
+.text-lg-hov:focus {
   color: #ddd;
 }
 
 .text-mg,
-.text-mg-hov:hover {
+.text-mg-hov:hover,
+.text-mg-hov:active,
+.text-mg-hov:focus {
   color: #aaa;
 }
 
 .text-dg,
-.text-dg-hov:hover {
+.text-dg-hov:hover,
+.text-dg-hov:active,
+.text-dg-hov:focus {
   color: #333;
 }
 
 .text-red,
-.text-red-hov:hover {
+.text-red-hov:hover,
+.text-red-hov:active,
+.text-red-hov:focus {
   color: #933;
 }
 
 .text-green,
-.text-green-hov:hover {
+.text-green-hov:hover,
+.text-green-hov:active,
+.text-green-hov:focus {
   color: #393;
 }
 
 .text-green-light,
-.text-green-light-hov:hover {
+.text-green-light-hov:hover,
+.text-green-light-hov:active,
+.text-green-light-hov:focus {
   color: #66b366;
 }
 
 .text-blue,
-.text-blue-hov:hover {
+.text-blue-hov:hover,
+.text-blue-hov:active,
+.text-blue-hov:focus {
   color: #339;
 }
 
 .text-white,
-.text-white-hov:hover {
+.text-white-hov:hover,
+.text-white-hov:active,
+.text-white-hov:focus {
   color: #fff;
 }
 
 .bg-red,
-.bg-red-hov:hover {
+.bg-red-hov:hover,
+.bg-red-hov:focus,
+.bg-red-hov:active {
   background-color: #933;
 }
 
 .bg-blue,
-.bg-blue-hov:hover {
+.bg-blue-hov:hover,
+.bg-blue-hov:focus,
+.bg-blue-hov:active {
   background-color: #339;
 }
 
 .bg-green,
-.bg-green-hov:hover {
+.bg-green-hov:hover,
+.bg-green-hov:focus,
+.bg-green-hov:active {
   background-color: #393;
 }
 
 .bg-green-light,
-.bg-green-light-hov:hover {
+.bg-green-light-hov:hover,
+.bg-green-light-hov:focus,
+.bg-green-light-hov:active {
   background-color: #66b366;
 }
 
 .bg-lg,
-.bg-lg-hov:hover {
+.bg-lg-hov:hover,
+.bglg--hov:focus,
+.bg-lg-hov:active {
   background-color: #ddd;
 }
 
 .bg-dg,
-.bg-dg-hov:hover {
+.bg-dg-hov:hover,
+.bg-dg-hov:focus,
+.bg-dg-hov:active {
   background-color: #333;
 }
 
 .bg-white,
-.bg-white-hov:hover {
+.bg-white-hov:hover,
+.bg-white-hov:focus,
+.bg-white-hov:active {
   background-color: #fff;
 }
 
@@ -385,6 +485,10 @@ main {
 }
 
 @media only screen and (min-width: 38em) {
+
+  .masthead {
+    position: static;
+  }
 
   .header-logo {
     margin: .65rem 0 0;
