@@ -84,11 +84,11 @@ input[type="checkbox"] + label::before {
 
 .nav-check:checked ~ .nav-label i:last-child img {
   opacity: 1;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .nav-check:checked ~ .nav-label i:first-child img {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   opacity: 0;
 }
 
@@ -103,6 +103,7 @@ input[type="checkbox"] + label::before {
 
 main {
  margin-top: 52.78px;
+ min-height: calc(100vh - 365px);
 }
 
 .banner-body {
@@ -141,10 +142,6 @@ input {
 
 .embed-team {
   padding-top: 66.6178%;
-}
-
-main {
-  min-height: calc(100vh - 365px);
 }
 
 a:focus,
@@ -347,27 +344,37 @@ select:focus {
 }
 
 .border-lg,
-.border-lg-hov:hover {
+.border-lg-hov:hover,
+.border-lg-hov:active,
+.border-lg-hov:focus {
   border-color: #ddd;
 }
 
 .border-white,
-.border-white-hov:hover {
+.border-white-hov:hover,
+.border-white-hov:active,
+.border-white-hov:focus {
   border-color: #fff;
 }
 
 .border-red,
-.border-red-hov:hover {
+.border-red-hov:hover,
+.border-red-hov:active,
+.border-red-hov:focus {
   border-color: #933;
 }
 
 .border-green,
-.border-green-hov:hover {
+.border-green-hov:hover,
+.border-green-hov:active,
+.border-green-hov:focus {
   border-color: #393;
 }
 
 .border-blue,
-.border-blue-hov:hover {
+.border-blue-hov:hover,
+.border-blue-hov:active,
+.border-blue-hov:focus {
   border-color: #339;
 }
 
@@ -419,6 +426,10 @@ select:focus {
   max-width: 70em;
   width: 100%;
 }*/
+
+.xs-s-pad-l {
+  padding-left: 1.3rem;
+}
 
 .mw-xs-7-5 {
   max-width: 7rem;
@@ -540,6 +551,10 @@ select:focus {
   }
 
   /* ----- =Alignment ----- */
+
+  .xs-s-pad-l {
+    padding-left: 0;
+  }
 
   .xs-c-s-c-m-r-l-r {
     text-align: right;
