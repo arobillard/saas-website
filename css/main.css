@@ -10,6 +10,7 @@ html {
   z-index: 1000000;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 
 .header-logo {
@@ -24,6 +25,10 @@ html {
 .p-logo {
   top: 60%;
   transform: translateY(-50%);
+}
+
+.nav-bar-button {
+  padding: 0 3rem 0 0;
 }
 
 .nav-label {
@@ -47,7 +52,10 @@ input[type="checkbox"] + label::before {
 
 .nav-slide {
   position: fixed;
-  bottom: 0;
+  top: 52.78px;
+  height: calc(100vh - 52.78px);
+  left: -1000px;
+  transition: left .5s ease-out;
 }
 
 .nav-check:checked ~ .nav-label i:last-child img {
@@ -61,11 +69,11 @@ input[type="checkbox"] + label::before {
 }
 
 .nav-check:checked ~ .nav-slide {
-  display: none;
+  left: 0;
 }
 
 main {
-
+ margin-top: 52.78px;
 }
 
 .banner-body {
@@ -488,6 +496,10 @@ select:focus {
 
   .masthead {
     position: static;
+  }
+
+  main {
+   margin-top: 0;
   }
 
   .header-logo {
