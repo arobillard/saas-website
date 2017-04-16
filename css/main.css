@@ -154,7 +154,7 @@ button:focus,
 select:focus {
   outline: 0px;
   outline-offset: 0;
-  box-shadow: 1px 1px 3px #393;
+  box-shadow: 0 0 10px #393;
 }
 
 /* ----- =Colors ----- */
