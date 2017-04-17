@@ -396,6 +396,11 @@ th {
   margin: 0 auto;
 }
 
+.mw-20 {
+  max-width: 20em;
+  margin: 0 auto 1.3rem;
+}
+
 .vertical-middle {
   vertical-align: middle;
 }
