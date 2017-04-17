@@ -102,8 +102,8 @@ input[type="checkbox"] + label::before {
 }
 
 main {
- margin-top: 52.78px;
- min-height: calc(100vh - 365px);
+  margin-top: 52.78px;
+  min-height: calc(100vh - 365px);
 }
 
 .banner-body {
@@ -152,9 +152,13 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  outline: 0px;
+  outline: 0;
   outline-offset: 0;
   box-shadow: 0 0 10px #393;
+}
+
+table {
+  min-width: 35em;
 }
 
 tr,
@@ -186,13 +190,6 @@ th {
   color: #333;
 }
 
-.text-red,
-.text-red-hov:hover,
-.text-red-hov:active,
-.text-red-hov:focus {
-  color: #933;
-}
-
 .text-green,
 .text-green-hov:hover,
 .text-green-hov:active,
@@ -207,32 +204,11 @@ th {
   color: #66b366;
 }
 
-.text-blue,
-.text-blue-hov:hover,
-.text-blue-hov:active,
-.text-blue-hov:focus {
-  color: #339;
-}
-
 .text-white,
 .text-white-hov:hover,
 .text-white-hov:active,
 .text-white-hov:focus {
   color: #fff;
-}
-
-.bg-red,
-.bg-red-hov:hover,
-.bg-red-hov:focus,
-.bg-red-hov:active {
-  background-color: #933;
-}
-
-.bg-blue,
-.bg-blue-hov:hover,
-.bg-blue-hov:focus,
-.bg-blue-hov:active {
-  background-color: #339;
 }
 
 .bg-green,
@@ -277,7 +253,6 @@ th {
   -o-transition: background-color .25s ease-out, color .25s ease-out, border-color .25s ease-out, opacity .25s ease-out;
   transition: background-color .25s ease-out, color .25s ease-out, border-color .25s ease-out, opacity .25s ease-out;
 }
-
 
 /* ----- =Text Changes ----- */
 
@@ -363,25 +338,11 @@ th {
   border-color: #fff;
 }
 
-.border-red,
-.border-red-hov:hover,
-.border-red-hov:active,
-.border-red-hov:focus {
-  border-color: #933;
-}
-
 .border-green,
 .border-green-hov:hover,
 .border-green-hov:active,
 .border-green-hov:focus {
   border-color: #393;
-}
-
-.border-blue,
-.border-blue-hov:hover,
-.border-blue-hov:active,
-.border-blue-hov:focus {
-  border-color: #339;
 }
 
 .border-r-0 {
@@ -409,10 +370,6 @@ th {
 .text-shadow {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
-
-/* ----- =Buttons ----- */
-
-
 
 /* ----- =Alignment ----- */
 
@@ -542,7 +499,7 @@ th {
   }
 
   main {
-   margin-top: 0;
+    margin-top: 0;
   }
 
   .header-logo {
@@ -620,7 +577,6 @@ th {
     margin-bottom: 5rem;
   }
 
-
 }
 
 @media only screen and (min-width: 60em) {
@@ -631,6 +587,10 @@ th {
 
   .island-s-1-2-l-1 {
     padding: 1.5rem;
+  }
+
+  .table-wrapper {
+    overflow: visible;
   }
 
 }
