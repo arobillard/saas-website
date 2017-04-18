@@ -511,6 +511,11 @@ th {
     margin: .65rem 0 0;
   }
 
+  .step-background {
+    background-image: url("../images/step-background.svg");
+    background-repeat: no-repeat;
+  }
+
   /* ----- =Alignment ----- */
 
   .xs-s-pad-l {
