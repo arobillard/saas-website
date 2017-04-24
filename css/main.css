@@ -167,6 +167,10 @@ th {
   vertical-align: middle;
 }
 
+tbody tr {
+  height: 69px;
+}
+
 /* ----- =Colors ----- */
 
 .text-lg,
