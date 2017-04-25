@@ -2,7 +2,8 @@ html {
   font-family: Merriweather, serif;
 }
 
-.dosis {
+.dosis,
+.btn {
   font-family: Dosis, sans-serif;
 }
 
@@ -119,6 +120,35 @@ main {
   max-width: 128px;
 }
 
+q {
+  quotes: none;
+}
+
+meter {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../images/rating-5.svg") transparent;
+  background-repeat: no-repeat;
+}
+
+meter.four-stars {
+  background: url("../images/rating-4.svg") transparent;
+  background-repeat: no-repeat;
+}
+
+meter::-moz-meter-bar {
+  background: none;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: none;
+}
+
+meter::-webkit-meter-bar {
+  background: none;
+}
+
 input {
   max-width: 18em;
 }
@@ -169,6 +199,53 @@ th {
 
 tbody tr {
   height: 69px;
+}
+
+/* ----- =Buttons ----- */
+
+.btn-green {
+  border-color: #393;
+  background-color: #393;
+  color: #fff;
+  border-radius: 0;
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+  border-color: #393;
+  background-color: #fff;
+  color: #393;
+}
+
+.btn-green-ghost {
+  border-color: #393;
+  background-color: #fff;
+  color: #393;
+  border-radius: 0;
+}
+
+.btn-green-ghost:hover,
+.btn-green-ghost:focus,
+.btn-green-ghost:active {
+  border-color: #393;
+  background-color: #393;
+  color: #fff;
+}
+
+.btn-white {
+  border-color: #fff;
+  background-color: #fff;
+  color: #333;
+  border-radius: 0;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active {
+  border-color: #fff;
+  background-color: #393;
+  color: #fff;
 }
 
 /* ----- =Colors ----- */
