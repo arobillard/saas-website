@@ -118,6 +118,11 @@ main {
 
 .prof-img {
   max-width: 128px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 q {
@@ -375,6 +380,10 @@ tbody tr {
 
 .b-t-2px {
   border-top: 2px solid #000;
+}
+
+.b-b-1px {
+  border-bottom: 1px solid #000;
 }
 
 .b-b-2px {
