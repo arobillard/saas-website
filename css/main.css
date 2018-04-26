@@ -473,8 +473,6 @@ tbody tr {
 
 @media only screen and (min-width: 25em) {
 
-  /* ----- =Spacing ----- */
-
   .gutter-s-1-2 {
     padding-left: .65rem;
     padding-right: .65rem;
